@@ -90,6 +90,15 @@ const BtnSecondary = ({ to, children }) => (
 const Home = () => {
 
   const [tab, setTab] = useState("students");
+  const bgImages = ["csh.jpeg", "mainbuilding.jpeg"];
+  const [bgIndex, setBgIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBgIndex((prev) => (prev + 1) % bgImages.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -103,15 +112,6 @@ const Home = () => {
   if (isMaintenance) {
     return <Maintainance />;
   }
-  const bgImages = ["csh.jpeg", "mainbuilding.jpeg"];
-  const [bgIndex, setBgIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setBgIndex((prev) => (prev + 1) % bgImages.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="myfont text-black bg-white">
