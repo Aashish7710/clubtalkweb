@@ -143,7 +143,7 @@ const Home = () => {
             <h1 className="font-black text-[clamp(52px,8vw,108px)] leading-[1] tracking-[3px] text-black mb-0">
               Discover<br />
               <span className="text-orange-600">Clubs & Events</span><br />
-              at NITJ...
+              at NITA...
             </h1>
           </ScrollReveal>
 
@@ -151,7 +151,7 @@ const Home = () => {
           <ScrollReveal delay={0.3}>
             <div className="mt-12 flex flex-wrap items-end gap-10 justify-between">
               <p className="text-[17px] font-light text-neutral-700 max-w-sm leading-relaxed">
-                Stop hunting through a dozen WhatsApp groups just to find out what's happening. From late-night hackathons to cultural fests, CampusNode brings the best of NITJ campus life right to your screen. Find your tribe, join the clubs you love, and never miss a beat again.</p>
+                Stop hunting through a dozen WhatsApp groups just to find out what's happening. From late-night hackathons to cultural fests, CampusNode brings the best of NITA campus life right to your screen. Find your tribe, join the clubs you love, and never miss a beat again.</p>
               <div className="flex gap-3 flex-wrap">
                 <Link
                   to="/events"
@@ -259,7 +259,7 @@ const Home = () => {
             <div className="mb-12">
 
               <h2 className="font-black text-[clamp(28px,4vw,44px)] text-black leading-[1.1] tracking-wide text-center">
-                NITJ Clubs & Societies
+                NITA Clubs & Societies
               </h2>
             </div>
           </ScrollReveal>
