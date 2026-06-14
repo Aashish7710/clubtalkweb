@@ -7,6 +7,9 @@ import Maintainance from './pages/Maintainance';
 import FAQ from './pages/FAQ';
 import Contribute from './pages/Contribute';
 import Team from './pages/Team';
+import RegisterStudent from './pages/RegisterStudent';
+
+import RegisterLanding from './pages/RegisterLanding';
 
 import HomePage from "./pages/Home";
 import ClubsPage from "./pages/Clubspage";
@@ -29,9 +32,12 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/clubs" element={<ClubsPage />} />
             <Route path="/events" element={<EventFeed />} />
+
+            <Route path="/register" element={<RegisterLanding />} />
+            <Route path="/register/student" element={<RegisterStudent />} />
             <Route path="/faq" element={<FAQ />} />
-             <Route path="/contribute" element={<Contribute />} />
-             <Route path="/team" element={<Team />} />
+            <Route path="/contribute" element={<Contribute />} />
+            <Route path="/team" element={<Team />} />
 
           </Routes>
 
